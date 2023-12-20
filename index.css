@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.quiz-header {
+  background-color: #052748;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+.quiz-header img {
+  margin-right: -7%; /* Adjust margin for spacing between image and text */
+}
+
+.quiz-header h1 {
+  margin: 0 auto; /* Center the text */
+  max-width: 25%;
+}
+
+
+.questions h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answerButtons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 25%;
+  margin: auto;
+  text-align: left;
+}
+
+
+.ansBtn {
+  padding: 10px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+
+.choice1 {
+  background-color: #ED1C24;
+  color: white;
+}
+
+
+.choice1:hover {
+  background-color: #a60f16;
+}
+
+.choice2 {
+  background-color: #00B6F0;
+  color: white;
+}
+
+.choice2:hover {
+  background-color: #0087b3;
+}
+
+.choice3 {
+  background-color: #FFD500;
+  color: white; /* Changing text color for better readability */
+}
+
+.choice3:hover {
+  background-color: #ccaa00;
+}
+
+.choice4 {
+  background-color: #7CBB00;
+  color: white;
+}
+
+.choice4:hover {
+  background-color: #5f8c00;
+}
+
+.nextBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #0087b3;
+  color: white;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.nextBtn:hover {
+  background-color: #005872;
+}
+
+
+
+/* Success alert */
+.correctAlert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  text-align: center;
+  max-width: 30%;
+  width: fit-content;
+  margin: auto;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.incorrectAlert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #c3e6cb;
+  text-align: center;
+  max-width: 30%;
+  width: fit-content;
+  margin: auto;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+}
+
