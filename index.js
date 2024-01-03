@@ -53,18 +53,22 @@ const questions = [
 
 let currentQuestion = 0;
 let score = 0;
-console.log(score)
 const questionElement = document.querySelector('.questions h1');
 const answerButtons = document.querySelectorAll('.answerButtons button');
 const correctAlert = document.querySelector('.correctAlert');
 const incorrectAlert = document.querySelector('.incorrectAlert');
 const nextButton = document.querySelector('.nextBtn');
+const startButton = document.getElementById('start-btn')
 correctAlert.style.display = 'none';
 incorrectAlert.style.display = 'none';
+nextButton.style.display = 'none'
+for(let i = 0; i < answerButtons.length; i++) {
+  answerButtons[i].style.display = 'none'
+}
+
 
 
 function displayQuestion() {
-  console.log(score)
   questionElement.textContent = questions[currentQuestion].question;
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].textContent = questions[currentQuestion].choices[i];
@@ -119,4 +123,14 @@ function displayResult() {
   nextButton.style.display = 'none';
 }
 
-displayQuestion(); // Display the first question initially
+
+startButton.addEventListener('click', ()=>{
+  displayQuestion()
+  startButton.style.display = 'none'
+  console.log(nextButton)
+  console.log(answerButtons)
+  nextButton.style.display = 'block'
+  for(let i = 0; i < answerButtons.length; i++) {
+    answerButtons[i].style.display = 'block'
+  }
+})
